@@ -86,8 +86,7 @@ Whether you're heading to school, meeting friends, or planning your next trip, o
 Before you begin, ensure you have the following installed:
 - **Node.js** (v16 or higher)
 - **npm** or **yarn**
-- **Expo CLI** (`npm install -g expo-cli`)
-- **Expo Go** app on your mobile device (iOS/Android)
+- **Android Studio** (para Android) ou **Xcode** (para iOS no macOS)
 
 ### Setup Instructions
 
@@ -100,24 +99,20 @@ Before you begin, ensure you have the following installed:
 2. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Start the development server**
+3. **Generate native files (first time only)**
    ```bash
-   npm start
-   # or
-   expo start
+   npm run prebuild
    ```
 
 4. **Run on your device**
-   - Scan the QR code with **Expo Go** (Android) or **Camera** app (iOS)
-   - Or use an emulator:
-     ```bash
-     npm run android  # For Android
-     npm run ios      # For iOS
-     ```
+   ```bash
+   npm run android  # For Android
+   npm run ios      # For iOS (macOS only)
+   ```
+
+> **📱 Nota Importante:** Este app agora usa **Development Builds** ao invés do Expo Go para melhor estabilidade e performance. Para instruções detalhadas de configuração, consulte [DEVELOPMENT_BUILD.md](outfitRATE/DEVELOPMENT_BUILD.md).
 
 ---
 
