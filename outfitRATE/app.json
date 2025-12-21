@@ -13,7 +13,13 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.outfitrate.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Este aplicativo precisa de acesso à câmera para capturar fotos de roupas e outfits.",
+        "NSPhotoLibraryUsageDescription": "Este aplicativo precisa de acesso à galeria de fotos para selecionar imagens de roupas.",
+        "NSLocationWhenInUseUsageDescription": "Este aplicativo usa sua localização para fornecer recomendações de outfit baseadas no clima."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,7 +27,15 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.outfitrate.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
